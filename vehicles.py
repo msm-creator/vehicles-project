@@ -8,10 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import seaborn as sns
-#import plotly
-#import pyspark
-#import tensorflow
-#import keras
+
 
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 from scipy.stats import f_oneway # in numpy
@@ -102,8 +99,8 @@ plt.show()
 plt.clf()
 
 # plot of all pairs of variables
-#sns.pairplot(vehicles_quantitative)
-#plt.show()
+sns.pairplot(vehicles_quantitative)
+plt.show()
 
 # heatmap plot
 #correlation_matrix = vehicles_quantitative.corr()
@@ -202,6 +199,7 @@ plt.clf()
 sns.lmplot(x ="engine_hp", y ="price", data = vehicles, order = 2, ci = None)
 plt.tight_layout()
 plt.show()'''
+
 
 
 
